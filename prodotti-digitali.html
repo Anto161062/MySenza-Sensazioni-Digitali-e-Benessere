@@ -7,129 +7,105 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #fff8f0;
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
-    header, footer {
-      background-color: #2a5d9f;
-      color: white;
+      background: #fff8f0;
+      padding: 40px 20px;
+      color: #2a5d9f;
       text-align: center;
-      padding: 20px;
     }
-    .container {
-      max-width: 960px;
-      margin: auto;
-      padding: 20px;
+    h1 {
+      margin-bottom: 10px;
     }
-    .product-box {
-      background: white;
-      border: 1px solid #a2bce0;
-      border-radius: 8px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    p {
+      font-size: 1rem;
+      margin-bottom: 30px;
     }
     h2 {
+      text-align: left;
+      max-width: 900px;
+      margin: 40px auto 20px;
       color: #2a5d9f;
     }
-    h3 {
-      margin-top: 0;
+    .checkbox-group {
+      max-width: 900px;
+      margin: 0 auto 30px auto;
+      text-align: left;
     }
-    .category-title {
-      border-bottom: 2px solid #2a5d9f;
-      padding-bottom: 5px;
+    .checkbox-box {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
       margin-bottom: 15px;
-      margin-top: 30px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+    .checkbox-box span {
+      font-size: 1.1rem;
+      max-width: 85%;
+    }
+    .checkbox-box input[type="checkbox"] {
+      transform: scale(1.4);
+      margin-left: 20px;
+      margin-top: 5px;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 15px 25px;
+      font-size: 1.1rem;
+      background-color: #2a5d9f;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Prodotti Digitali MySenza</h1>
-    <p>Soluzioni utili, moderne, indispensabili</p>
-  </header>
+  <h1>Prodotti Digitali MySenza</h1>
+  <p><strong>Seleziona i programmi di tuo interesse ed invia la mail schiacciando il bottone blu "Chiedi Dettagli".<br>Ogni proposta è pensata per semplificare il tuo lavoro e farti risparmiare tempo.</strong></p>
 
-  <div class="container">
-    <h2 class="category-title">Per Privati</h2>
-    <div class="product-box">
-      <h3>Organizer Digitale MyDay</h3>
-      <p>Organizza giornata, scuola, attività e impegni. Facile, intuitivo e perfetto per la routine quotidiana.</p>
-    </div>
-    <div class="product-box">
-      <h3>Archivio Documenti Familiari</h3>
-      <p>Salva e consulta facilmente bollette, visite, scontrini e appunti importanti in modo digitale.</p>
-    </div>
-    <div class="product-box">
-      <h3>Gestione Budget Domestico</h3>
-      <p>Controlla spese, pianifica risparmi e ottimizza il bilancio di casa con un sistema semplice e funzionale.</p>
-    </div>
-    <div class="product-box">
-      <h3>Registratore & Diario Vocale</h3>
-      <p>Registra pensieri o promemoria vocali, convertiti in testo ordinato grazie all’intelligenza artificiale.</p>
-    </div>
+  <div id="digitalForm" class="checkbox-group">
+    <h2>Per Privati</h2>
+    <div class="checkbox-box"><span><strong>Organizer Digitale MyDay</strong><br>Organizza giornata, scuola, attività e impegni. Facile, intuitivo e perfetto per routine quotidiana.</span><input type="checkbox" value="Organizer Digitale MyDay"></div>
+    <div class="checkbox-box"><span><strong>Archivio Documenti Familiari</strong><br>Salva e consulta facilmente bollette, visite, assicurazioni e appunti importanti in modo digitale.</span><input type="checkbox" value="Archivio Documenti Familiari"></div>
+    <div class="checkbox-box"><span><strong>Gestione Budget Domestico</strong><br>Controlla spese, pianifica risparmi e bilancia il bilancio di casa con un sistema semplice e funzionale.</span><input type="checkbox" value="Gestione Budget Domestico"></div>
+    <div class="checkbox-box"><span><strong>Registratore & Diario Vocale</strong><br>Registra pensieri o promemoria vocali, convertili in testo ordinato grazie all'intelligenza artificiale.</span><input type="checkbox" value="Registratore & Diario Vocale"></div>
 
-    <h2 class="category-title">Per Negozi</h2>
-    <div class="product-box">
-      <h3>CRM Light + Fatturazione</h3>
-      <p>Gestione clienti e vendite in modo snello. Fatturazione semplice integrata, adatto a piccole attività.</p>
-    </div>
-    <div class="product-box">
-      <h3>Lista Clienti con Reminder</h3>
-      <p>Promemoria automatici per compleanni, riordini, offerte personalizzate. Fidelizzazione garantita.</p>
-    </div>
-    <div class="product-box">
-      <h3>Kit Visual Merchandising</h3>
-      <p>Strategie espositive, layout e colori stagionali per migliorare la vetrina e aumentare le vendite.</p>
-    </div>
-    <div class="product-box">
-      <h3>Registratore Intelligente MyTalk</h3>
-      <p>Registra conversazioni con clienti, trascrive e suggerisce azioni mirate per la vendita e il follow-up.</p>
-    </div>
+    <h2>Per Negozi</h2>
+    <div class="checkbox-box"><span><strong>CRM Light + Fatturazione Veloce</strong><br>Gestione cliente e vendite in modo snello. Fatturazione semplice integrata, adatto a piccole attività.</span><input type="checkbox" value="CRM Light + Fatturazione Veloce"></div>
+    <div class="checkbox-box"><span><strong>Sistema Lista Clienti con Reminder</strong><br>Promemoria automatici per compleanni, ordini, offerte personalizzate. Fidelizzazione garantita.</span><input type="checkbox" value="Sistema Lista Clienti con Reminder"></div>
+    <div class="checkbox-box"><span><strong>Kit Visual Merchandising</strong><br>Strategie espositive, layout e consigli intelligenti per migliorare la vetrina e aumentare le vendite.</span><input type="checkbox" value="Kit Visual Merchandising"></div>
+    <div class="checkbox-box"><span><strong>Registratore Intelligente MyTalk</strong><br>Registra conversazioni con clienti, trascrive e suggerisce azioni mirate per la vendita e il follow-up.</span><input type="checkbox" value="Registratore Intelligente MyTalk"></div>
 
-    <h2 class="category-title">Per Uffici</h2>
-    <div class="product-box">
-      <h3>Dashboard di Progetto</h3>
-      <p>Pianificazione attività e task visivi condivisi. Migliora la collaborazione e riduce i ritardi.</p>
-    </div>
-    <div class="product-box">
-      <h3>Gestione Email e Telefonate</h3>
-      <p>Conversione automatica di messaggi vocali e email in attività con memo e reminder smart.</p>
-    </div>
-    <div class="product-box">
-      <h3>Modulo HR Digitale</h3>
-      <p>Gestione digitale di ferie, permessi, documentazione e feedback del team.</p>
-    </div>
-    <div class="product-box">
-      <h3>Assistente Virtuale Meeting</h3>
-      <p>Registra e riassume automaticamente le riunioni, creando to-do e focus da condividere.</p>
-    </div>
+    <h2>Per Uffici</h2>
+    <div class="checkbox-box"><span><strong>Dashboard di Progetto</strong><br>Pianificazione attività e task condivisi. Migliora la collaborazione e riduce i ritardi.</span><input type="checkbox" value="Dashboard di Progetto"></div>
+    <div class="checkbox-box"><span><strong>Gestione Email e Telefonate</strong><br>Conversione automatica di messaggi vocali e email in attività con memo e reminder esatti.</span><input type="checkbox" value="Gestione Email e Telefonate"></div>
+    <div class="checkbox-box"><span><strong>Modulo HR Digitale</strong><br>Gestione digitale di ferie, permessi, documentazione e feedback del team.</span><input type="checkbox" value="Modulo HR Digitale"></div>
+    <div class="checkbox-box"><span><strong>Assistente Virtuale Meeting</strong><br>Registra e riassume automaticamente le riunioni, creando to-do e focus da condividere.</span><input type="checkbox" value="Assistente Virtuale Meeting"></div>
 
-    <h2 class="category-title">Per Aziende</h2>
-    <div class="product-box">
-      <h3>Piattaforma Comunicazione Interna</h3>
-      <p>Uno spazio online aziendale per news, risorse condivise, procedure e onboarding nuovi assunti.</p>
-    </div>
-    <div class="product-box">
-      <h3>Monitor Attività & Report</h3>
-      <p>Analisi automatizzata delle attività settimanali con report utili per la gestione e la strategia.</p>
-    </div>
-    <div class="product-box">
-      <h3>Gestione Collaboratori Esterni</h3>
-      <p>Contratti, scadenze e flussi digitali per freelance e partner in un unico strumento accessibile.</p>
-    </div>
-    <div class="product-box">
-      <h3>MySenza Recorder Pro</h3>
-      <p>Registra incontri e riunioni, genera resoconti e priorità operative tramite AI.</p>
-    </div>
+    <h2>Per Aziende</h2>
+    <div class="checkbox-box"><span><strong>Piattaforma Comunicazione Interna</strong><br>Uno spazio online dedicato per team, risorse condivise, procedure e onboarding nuovi assunti.</span><input type="checkbox" value="Piattaforma Comunicazione Interna"></div>
+    <div class="checkbox-box"><span><strong>Monitor Attività & Report</strong><br>Analisi settimanale delle attività automaticamente con report utili per gestione e strategia.</span><input type="checkbox" value="Monitor Attività & Report"></div>
+    <div class="checkbox-box"><span><strong>Gestione Collaboratori Esterni</strong><br>Monitoraggio collaboratori, budget e fatture da gestire in un unico strumento accessibile.</span><input type="checkbox" value="Gestione Collaboratori Esterni"></div>
+    <div class="checkbox-box"><span><strong>MySenza Recorder Pro</strong><br>Registratore evoluto, genera riassunti e priorità operabili tramite AI.</span><input type="checkbox" value="MySenza Recorder Pro"></div>
   </div>
 
-  <footer>
-    <p>MySenza © 2025 - Profumo, Digitale, Natura</p>
-  </footer>
+  <button class="button" onclick="inviaRichiestaEmail()">Chiedi Dettagli</button>
+
+  <script>
+    function inviaRichiestaEmail() {
+      const checked = Array.from(document.querySelectorAll('input[type=checkbox]:checked'))
+                          .map(cb => cb.value);
+      if (checked.length === 0) {
+        alert("Seleziona almeno un programma.");
+        return;
+      }
+      const subject = encodeURIComponent("Richiesta dettagli prodotti digitali");
+      const body = encodeURIComponent("Buongiorno,\n\nSono interessato ai seguenti programmi digitali MySenza:\n- " + checked.join("\n- ") + "\n\nAttendo informazioni, grazie.");
+      window.location.href = `mailto:mysenza1@gmail.com?subject=${subject}&body=${body}`;
+    }
+  </script>
 </body>
 </html>
-
-
-
