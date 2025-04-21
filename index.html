@@ -1,111 +1,105 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prodotti Digitali MySenza</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MySenza – Sensazioni Digitali e Benessere</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #fff8f0;
-      padding: 40px 20px;
-      color: #2a5d9f;
+      background: #fefefe;
       text-align: center;
+      padding: 30px;
+      color: #222;
+    }
+    a img {
+      width: 180px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      transition: 0.3s;
+    }
+    a img:hover {
+      opacity: 0.8;
     }
     h1 {
+      font-size: 32px;
       margin-bottom: 10px;
     }
-    p {
-      font-size: 1rem;
-      margin-bottom: 30px;
-    }
     h2 {
-      text-align: left;
-      max-width: 900px;
-      margin: 40px auto 20px;
-      color: #2a5d9f;
+      font-size: 18px;
+      color: #666;
     }
-    .checkbox-group {
-      max-width: 900px;
-      margin: 0 auto 30px auto;
-      text-align: left;
+    p {
+      font-size: 16px;
+      max-width: 700px;
+      margin: 20px auto;
+      color: #444;
     }
-    .checkbox-box {
-      background: #fff;
+    input, textarea {
+      width: 90%;
+      max-width: 600px;
+      margin: 10px auto;
+      padding: 12px;
+      border-radius: 6px;
       border: 1px solid #ccc;
-      border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 15px;
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
+      font-size: 16px;
     }
-    .checkbox-box span {
-      font-size: 1.1rem;
-      max-width: 85%;
-    }
-    .checkbox-box input[type="checkbox"] {
-      transform: scale(1.4);
-      margin-left: 20px;
-      margin-top: 5px;
-    }
-    .button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 15px 25px;
-      font-size: 1.1rem;
-      background-color: #2a5d9f;
+    button {
+      padding: 12px 30px;
+      font-size: 16px;
+      background: #007B7F;
       color: white;
       border: none;
-      border-radius: 10px;
+      border-radius: 6px;
       cursor: pointer;
+      margin-top: 10px;
+    }
+    button:hover {
+      background: #005c5f;
+    }
+    .section {
+      margin-top: 40px;
+      padding-top: 10px;
+      border-top: 1px solid #ddd;
     }
   </style>
 </head>
 <body>
-  <h1>Prodotti Digitali MySenza</h1>
-  <p><strong>Seleziona i programmi di tuo interesse ed invia la mail schiacciando il bottone blu "Chiedi Dettagli".<br>Ogni proposta è pensata per semplificare il tuo lavoro e farti risparmiare tempo.</strong></p>
 
-  <div id="digitalForm" class="checkbox-group">
-    <h2>Per Privati</h2>
-    <div class="checkbox-box"><span><strong>Organizer Digitale MyDay</strong><br>Organizza giornata, scuola, attività e impegni. Facile, intuitivo e perfetto per routine quotidiana.</span><input type="checkbox" value="Organizer Digitale MyDay"></div>
-    <div class="checkbox-box"><span><strong>Archivio Documenti Familiari</strong><br>Salva e consulta facilmente bollette, visite, assicurazioni e appunti importanti in modo digitale.</span><input type="checkbox" value="Archivio Documenti Familiari"></div>
-    <div class="checkbox-box"><span><strong>Gestione Budget Domestico</strong><br>Controlla spese, pianifica risparmi e bilancia il bilancio di casa con un sistema semplice e funzionale.</span><input type="checkbox" value="Gestione Budget Domestico"></div>
-    <div class="checkbox-box"><span><strong>Registratore & Diario Vocale</strong><br>Registra pensieri o promemoria vocali, convertili in testo ordinato grazie all'intelligenza artificiale.</span><input type="checkbox" value="Registratore & Diario Vocale"></div>
+  <!-- Logo MySenza cliccabile -->
+  <a href="index.html">
+    <img src="logo-mysenza.png" alt="MySenza Logo">
+  </a>
 
-    <h2>Per Negozi</h2>
-    <div class="checkbox-box"><span><strong>CRM Light + Fatturazione Veloce</strong><br>Gestione cliente e vendite in modo snello. Fatturazione semplice integrata, adatto a piccole attività.</span><input type="checkbox" value="CRM Light + Fatturazione Veloce"></div>
-    <div class="checkbox-box"><span><strong>Sistema Lista Clienti con Reminder</strong><br>Promemoria automatici per compleanni, ordini, offerte personalizzate. Fidelizzazione garantita.</span><input type="checkbox" value="Sistema Lista Clienti con Reminder"></div>
-    <div class="checkbox-box"><span><strong>Kit Visual Merchandising</strong><br>Strategie espositive, layout e consigli intelligenti per migliorare la vetrina e aumentare le vendite.</span><input type="checkbox" value="Kit Visual Merchandising"></div>
-    <div class="checkbox-box"><span><strong>Registratore Intelligente MyTalk</strong><br>Registra conversazioni con clienti, trascrive e suggerisce azioni mirate per la vendita e il follow-up.</span><input type="checkbox" value="Registratore Intelligente MyTalk"></div>
+  <h1>MySenza – Sensazioni Digitali e Benessere</h1>
+  <h2>Unisciti a un’esperienza che unisce profumi, natura e strumenti digitali</h2>
+  
+  <p>Scrivi cosa vuoi creare, scoprire o ricevere. Ti risponderà un team di AI coordinate, pronte ad aiutarti.</p>
 
-    <h2>Per Uffici</h2>
-    <div class="checkbox-box"><span><strong>Dashboard di Progetto</strong><br>Pianificazione attività e task condivisi. Migliora la collaborazione e riduce i ritardi.</span><input type="checkbox" value="Dashboard di Progetto"></div>
-    <div class="checkbox-box"><span><strong>Gestione Email e Telefonate</strong><br>Conversione automatica di messaggi vocali e email in attività con memo e reminder esatti.</span><input type="checkbox" value="Gestione Email e Telefonate"></div>
-    <div class="checkbox-box"><span><strong>Modulo HR Digitale</strong><br>Gestione digitale di ferie, permessi, documentazione e feedback del team.</span><input type="checkbox" value="Modulo HR Digitale"></div>
-    <div class="checkbox-box"><span><strong>Assistente Virtuale Meeting</strong><br>Registra e riassume automaticamente le riunioni, creando to-do e focus da condividere.</span><input type="checkbox" value="Assistente Virtuale Meeting"></div>
+  <input type="text" placeholder="Es. Voglio un eBook sulle erbe depurative" />
 
-    <h2>Per Aziende</h2>
-    <div class="checkbox-box"><span><strong>Piattaforma Comunicazione Interna</strong><br>Uno spazio online dedicato per team, risorse condivise, procedure e onboarding nuovi assunti.</span><input type="checkbox" value="Piattaforma Comunicazione Interna"></div>
-    <div class="checkbox-box"><span><strong>Monitor Attività & Report</strong><br>Analisi settimanale delle attività automaticamente con report utili per gestione e strategia.</span><input type="checkbox" value="Monitor Attività & Report"></div>
-    <div class="checkbox-box"><span><strong>Gestione Collaboratori Esterni</strong><br>Monitoraggio collaboratori, budget e fatture da gestire in un unico strumento accessibile.</span><input type="checkbox" value="Gestione Collaboratori Esterni"></div>
-    <div class="checkbox-box"><span><strong>MySenza Recorder Pro</strong><br>Registratore evoluto, genera riassunti e priorità operabili tramite AI.</span><input type="checkbox" value="MySenza Recorder Pro"></div>
+  <div class="section">
+    <h2>Cosa puoi fare con MySenza</h2>
+    <p>
+      - Creare eBook con l’aiuto dell’AI<br>
+      - Trovare i profumi più adatti per la casa o il lavoro<br>
+      - Usare strumenti digitali per promuovere il tuo benessere<br>
+      - Stampare, impaginare, personalizzare prodotti<br>
+      - Richiedere servizi grazie alla rete di artigiani, tipografie e aziende partner
+    </p>
   </div>
 
-  <button class="button" onclick="inviaRichiestaEmail()">Chiedi Dettagli</button>
+  <div class="section">
+    <h2>Hai bisogno di un supporto umano?</h2>
+    <p>Il fondatore del progetto è C.M.A. – ChatGPT · MySenza · Anto<br>Compila il modulo per ricevere assistenza personalizzata.</p>
 
-  <script>
-    function inviaRichiestaEmail() {
-      const checked = Array.from(document.querySelectorAll('input[type=checkbox]:checked'))
-                          .map(cb => cb.value);
-      if (checked.length === 0) {
-        alert("Seleziona almeno un programma.");
-        return;
-      }
-      const subject = encodeURIComponent("Richiesta dettagli prodotti digitali");
-      const body = encodeURIComponent("Buongiorno,\n\nSono interessato ai seguenti programmi digitali MySenza:\n- " + checked.join("\n- ") + "\n\nAttendo informazioni, grazie.");
-      window.location.href = `mailto:mysenza1@gmail.com?subject=${subject}&body=${body}`;
-    }
-  </script>
+    <form>
+      <input type="text" name="name" placeholder="Il tuo nome">
+      <input type="email" name="email" placeholder="La tua email">
+      <textarea name="message" rows="4" placeholder="Scrivi qui la tua richiesta o il tuo progetto"></textarea>
+      <button type="submit">Invia</button>
+    </form>
+  </div>
+
 </body>
 </html>
